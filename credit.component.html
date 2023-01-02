@@ -1,0 +1,33 @@
+<div class="card">
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+        <ul>
+        <div class="row">
+            <div class="col-md-3">
+                <h6 style="color:cornflowerblue">Montant:</h6>
+                <li *ngFor="let item of list">
+                    {{item.montant}}
+                </li>
+            </div>
+            <div class="col-md-3">
+                <h6 style="color:#6495ed">Duree:</h6>
+                <li *ngFor="let item of list">
+                    {{item.duree}}
+                </li>
+            </div>
+            <div class="col-md-2">
+                <h6 style="color:cornflowerblue">Taux:</h6>
+                <li *ngFor="let item of list">
+                    {{item.taux}}
+                </li>
+            </div>
+            <div class="col-md-4">
+                <h6 style="color:cornflowerblue">Annuite:</h6>
+                <li *ngFor="let item of list">
+                    {{item.annuite}}
+                </li>
+            </div>
+        </div>
+        </ul>
+    </div>
+</div>
